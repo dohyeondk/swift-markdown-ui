@@ -28,3 +28,7 @@ Once your app no longer uses Kotlin Multiplatform or once Carthage supports SPM-
 ## Known Issues
 
 - Sources/MarkdownUI/Parser/MarkdownParser.swift file contains some commented-out changes to allow successful compilation. As a result, table support is not stable.
+- Once Apple’s fork of cmark exposes these symbols, you can uncomment them.
+  - `CMARK_NODE_TABLE`
+  - `CMARK_NODE_TABLE_ROW`
+  - `CMARK_NODE_TABLE_CELL`
